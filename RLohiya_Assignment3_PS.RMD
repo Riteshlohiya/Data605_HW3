@@ -60,5 +60,6 @@ E_Vals
 
 The manual work is placed at the below location on Github and will be attached also.
 
-Link for manual work: 
+Link for manual work: https://github.com/Riteshlohiya/Data605_HW3/blob/master/RLohiya_Assignment3_PS2.pdf
+
 
