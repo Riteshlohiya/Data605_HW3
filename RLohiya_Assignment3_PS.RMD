@@ -1,0 +1,64 @@
+---
+title: "RLohiya_Assignment3_PS1&PS2"
+author: "Ritesh Lohiya"
+date: "September 14, 2018"
+output: html_document
+---
+
+---
+title: "Data605_HW3_PS1"
+author: "Ritesh Lohiya"
+date: "September 13, 2018"
+output: html_document
+---
+
+#                             ASSIGNMENT 3
+
+#           IS 605 FUNDAMENTALS OF COMPUTATIONAL MATHEMATICS
+
+#                            Problem set 1
+
+1. What is the rank of the matrix A?
+
+```{r}
+rank = 0
+A <- matrix(c(1, -1, 0, 5, 2, 0, 1, 4, 3,1 -2, -2,4,3,1,-3), nrow=4, ncol=4) 
+A
+```
+
+Rank of the matrix using qr function:
+
+```{r}
+rank <- qr(A)$rank
+rank
+```
+
+The rank is 4
+
+2. Given an mxn matrix where m > n, what can be the maximum rank? The minimum rank, assuming that the matrix is non-zero?
+
+The Matrix can have a maximum rank of rank(A)=n and mininum rank of 1
+
+3. What is the rank of matrix B?
+
+```{r}
+B<-matrix(c(1,2,1,3,6,3,2,4,2), byrow =TRUE,nrow = 3,ncol = 3)
+qr(B)$rank
+```
+
+The rank is 1
+
+#                            Problem set 2
+
+Compute the eigenvalues and eigenvectors of the matrix A. You'll need to show your work. You'll need to write out the characteristic polynomial and show your solution.
+
+```{r}
+A <- matrix(c(1, 0, 0, 2, 4, 0, 3, 5, 6), nrow=3, ncol=3)
+E_Vals <- eigen(A)
+E_Vals
+```
+
+The manual work is placed at the below location on Github and will be attached also.
+
+Link for manual work: 
+
